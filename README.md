@@ -1,14 +1,31 @@
 # PatentStrzelecki
 
-Patent-Strzelecki
-Privacy Policy for Patent Strzelecki
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patent Strzelecki – pomoc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<!-- SZABLON – uzupełnij [NAWIASY]. Ten adres podaj w App Store Connect jako „Support URL”. -->
+<h1>Patent Strzelecki</h1>
+<p class="lead">Nauka do egzaminu na patent strzelecki PZSS i egzaminu na pozwolenie na broń w Policji: oficjalne pytania, egzaminy próbne, wyjaśnienia z treścią przepisów.</p>
 
-Last updated: October 2026
+<h2>Pomoc i kontakt</h2>
+<p>Pytania, problemy z zakupem, propozycje: <a href="mailto:[E-MAIL]">[E-MAIL]</a>.</p>
 
-Patent Strzelecki does not collect, store, transmit, or share any personal information.
+<h2>Błąd w pytaniu?</h2>
+<p>Napisz, którego pytania dotyczy (numer i egzamin) i co jest nie tak. W aplikacji możesz to zrobić z <strong>Ustawienia → Zgłoś błąd w pytaniu</strong>. Poprawki trafiają do aplikacji bez czekania na jej aktualizację.</p>
 
-The application stores game progress and settings locally on the user's device only.
+<h2>Zakup</h2>
+<p>Pełna wersja to jednorazowy zakup, bez subskrypcji. Na nowym telefonie wybierz <strong>Ustawienia → Przywróć zakup</strong> (to samo Apple ID). Zwroty obsługuje Apple: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
-No user accounts are required. No personal data is collected. No analytics services are used. No advertising services are used.
+<p><a href="privacy.html">Polityka prywatności</a></p>
 
-If you have any questions, contact: watch.games.retro@gmail.com
+<p class="muted">Aplikacja jest niezależna i niepowiązana z Polskim Związkiem Strzelectwa Sportowego ani z Policją. W razie wątpliwości rozstrzyga aktualny tekst przepisów.</p>
+</main>
+</body>
+</html>
