@@ -1,8 +1,5 @@
 # PatentStrzelecki
 
-<title>Patent Strzelecki – pomoc</title>
-<link rel="stylesheet" href="style.css">
-</head>
 <body>
 <main>
 <!-- SZABLON – uzupełnij [NAWIASY]. Ten adres podaj w App Store Connect jako „Support URL”. -->
