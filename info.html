@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Patent Strzelecki – Testy WPA. Informacje o aplikacji, nauce i egzaminach próbnych, pełnej wersji, pomocy oraz prywatności.">
+  <meta name="theme-color" content="#0b1f3a">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://mboryczko.github.io/PatentStrzelecki/info.html">
+  <title>Patent Strzelecki – Testy WPA · informacje i pomoc</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f7fb; --card: #fff; --ink: #0b1f3a; --muted: #53647b;
+      --blue: #1565da; --soft: #eaf2ff; --border: #dce5f1; --red: #e31e24;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body { margin: 0; font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink); background: radial-gradient(ellipse at 90% 0, #d9e9ff 0, transparent 38%), var(--bg); }
+    a { color: var(--blue); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; border-radius: 4px; }
+    .skip { position: absolute; top: -100px; left: 16px; padding: 12px; background: var(--card); z-index: 2; }
+    .skip:focus { top: 12px; }
+    .wrap { width: min(100% - 40px, 1000px); margin-inline: auto; }
+    header { padding-block: 26px; border-bottom: 1px solid var(--border); }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 750; letter-spacing: -.02em; }
+    .brand svg { width: 38px; height: 38px; flex-shrink: 0; }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; font-size: .88rem; }
+    nav a { color: var(--ink); text-decoration: none; }
+    main { padding-bottom: 48px; }
+    .hero { padding: 64px 0 38px; max-width: 760px; }
+    .eyebrow { display: inline-block; margin: 0 0 14px; font-size: .78rem; font-weight: 750;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--blue); }
+    h1 { margin: 0 0 20px; font-size: clamp(2.2rem, 6vw, 3.7rem); line-height: 1.13; letter-spacing: -.045em; }
+    h1 span { color: var(--blue); }
+    h2 { margin: 0 0 12px; font-size: clamp(1.4rem, 3vw, 1.85rem); line-height: 1.25; letter-spacing: -.025em; }
+    h3 { margin: 0 0 8px; font-size: 1.05rem; line-height: 1.4; }
+    p { margin: 0 0 14px; }
+    .lead { font-size: 1.13rem; color: var(--muted); max-width: 690px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+      padding: 10px 22px; border: 1px solid var(--border); border-radius: 30px;
+      color: var(--ink); background: var(--card); font-weight: 650; text-decoration: none; }
+    .button.primary { color: #fff; border-color: transparent; background: linear-gradient(135deg, #287ef1, #1060d7); }
+    .button:hover { text-decoration: none; box-shadow: 0 4px 14px #0b1f3a15; }
+    .facts { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; color: var(--muted); font-size: .88rem; }
+    .facts span::before { content: "✓"; color: var(--blue); font-weight: 750; margin-right: 6px; }
+    section { margin-top: 34px; }
+    .section-intro { max-width: 720px; color: var(--muted); }
+    .paths { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { background: var(--card); padding: 25px; border: 1px solid var(--border); border-radius: 22px; }
+    .card p:last-child { margin-bottom: 0; }
+    .label { color: var(--blue); font-size: .78rem; text-transform: uppercase; font-weight: 750; letter-spacing: .08em; margin-bottom: 10px; }
+    .number { font-size: 2.2rem; font-weight: 750; line-height: 1.1; margin-bottom: 10px; letter-spacing: -.04em; }
+    .muted { color: var(--muted); }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .feature-number { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
+      border-radius: 12px; color: var(--blue); background: var(--soft); font-weight: 750; margin-bottom: 14px; }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    ul { margin: 0; padding-left: 21px; }
+    li { margin-bottom: 8px; }
+    .fine { font-size: .88rem; color: var(--muted); }
+    .note { border-left: 3px solid var(--blue); padding-left: 16px; margin-top: 18px; }
+    details { padding: 18px 0; border-bottom: 1px solid var(--border); }
+    summary { cursor: pointer; font-weight: 650; }
+    details p { margin-top: 12px; max-width: 800px; color: var(--muted); }
+    .contact { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .contact a { overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--border); padding: 26px 0 36px; font-size: .85rem; color: var(--muted); }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-bottom: 14px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #07111f; --card: #10233e; --ink: #f2f6ff; --muted: #b0bfd3;
+        --blue: #87baff; --soft: #183658; --border: #29405e; --red: #ff646b; }
+      body { background: radial-gradient(ellipse at 90% 0, #173a68 0, transparent 40%), var(--bg); }
+    }
+    @media (max-width: 700px) {
+      .wrap { width: min(100% - 32px, 1000px); }
+      header { padding-block: 20px; }
+      nav { gap: 12px 18px; }
+      .hero { padding-top: 40px; }
+      .paths, .features, .split { grid-template-columns: 1fr; }
+      .card { padding: 22px; }
+      .actions .button { flex: 1 1 180px; }
+      section { margin-top: 28px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+  <header>
+    <div class="wrap header-inner">
+      <div class="brand">
+        <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="9" stroke="currentColor" stroke-width="2"/>
+          <path d="M24 1v13M24 34v13M1 24h13M34 24h13" stroke="currentColor" stroke-width="2"/>
+          <circle cx="24" cy="24" r="3" fill="var(--red)"/>
+        </svg>
+        <span>Patent Strzelecki</span>
+      </div>
+      <nav aria-label="Nawigacja główna">
+        <a href="#o-aplikacji">O aplikacji</a>
+        <a href="#pomoc">Pomoc</a>
+        <a href="privacy.html">Prywatność</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc" class="wrap">
+    <div class="hero">
+      <p class="eyebrow">Nauka · powtórki · egzaminy próbne</p>
+      <h1>Patent Strzelecki<br><span>– Testy WPA</span></h1>
+      <p class="lead">Przygotuj się do teorii na patent strzelecki PZSS lub egzaminu na pozwolenie na broń przed komisją Policji. Ucz się we własnym tempie i sprawdzaj, co już umiesz.</p>
+      <div class="actions">
+        <a class="button primary" href="https://apps.apple.com/pl/app/id6818608480">Zobacz w App Store <span aria-hidden="true">&nbsp;↗</span></a>
+        <a class="button" href="#pomoc">Pomoc i kontakt</a>
+      </div>
+      <div class="facts" aria-label="Najważniejsze cechy">
+        <span>Działa offline</span><span>Bez konta</span><span>Bez reklam</span>
+      </div>
+    </div>
+
+    <section id="o-aplikacji" aria-labelledby="sciezki">
+      <h2 id="sciezki">Dwie ścieżki przygotowania</h2>
+      <p class="section-intro">Wybierz egzamin w aplikacji. Każda ścieżka ma własne działy, postęp i zasady egzaminu próbnego.</p>
+      <div class="paths">
+        <article class="card">
+          <p class="label">Patent PZSS</p>
+          <h3>Patent strzelecki</h3>
+          <p class="number">142 pytania</p>
+          <p class="muted">Nauka przepisów, bezpieczeństwa, regulaminów sportowych, budowy broni i prawa karnego. Egzamin próbny uwzględnia pytania krytyczne.</p>
+        </article>
+        <article class="card">
+          <p class="label">Policja · WPA</p>
+          <h3>Egzamin na pozwolenie na broń</h3>
+          <p class="number">200 pytań</p>
+          <p class="muted">Przygotowanie do części teoretycznej egzaminu przed komisją Policji. Nauka według działów oraz losowane egzaminy próbne z limitem czasu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="nauka">
+      <h2 id="nauka">Od pierwszego pytania do egzaminu próbnego</h2>
+      <div class="features">
+        <article class="card">
+          <span class="feature-number" aria-hidden="true">1</span>
+          <h3>Ucz się ze zrozumieniem</h3>
+          <p class="muted">Rozwiązuj pytania według działów. Po odpowiedzi zobaczysz wyjaśnienie i, tam gdzie są dostępne, dosłowne fragmenty przepisów.</p>
+        </article>
+        <article class="card">
+          <span class="feature-number" aria-hidden="true">2</span>
+          <h3>Wracaj do trudnych pytań</h3>
+          <p class="muted">Powtórki rozłożone w czasie pomagają utrwalać wiedzę. Pomyłki zapisują się w postępie, a błędne odpowiedzi wracają także w tej samej sesji.</p>
+        </article>
+        <article class="card">
+          <span class="feature-number" aria-hidden="true">3</span>
+          <h3>Sprawdź przygotowanie</h3>
+          <p class="muted">Rozwiąż egzamin z zegarem i progiem zaliczenia właściwym dla wybranej ścieżki. Po zakończeniu przejrzyj odpowiedzi i wyjaśnienia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="dostep">
+      <h2 id="dostep">Zacznij bezpłatnie</h2>
+      <div class="split">
+        <div>
+          <h3>Wersja darmowa</h3>
+          <ul>
+            <li>Część pytań z każdego działu wraz z wyjaśnieniami.</li>
+            <li>Jeden egzamin próbny dziennie, losowany z całej bazy wybranej ścieżki.</li>
+            <li>Zapisywanie postępu i pomyłek na urządzeniu.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Pełna wersja — jednorazowy zakup</h3>
+          <ul>
+            <li>Wszystkie pytania i egzaminy próbne bez dziennego limitu.</li>
+            <li>Historia egzaminów z omówieniem ostatnich wyników.</li>
+            <li>Osobny trening „Moje błędy”.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine note">Bez subskrypcji. Aktualna cena jest widoczna w aplikacji przed zakupem. Zakup i jego przywracanie obsługuje sklep właściwy dla danej platformy; zakup z App Store nie przenosi się automatycznie do Google Play.</p>
+    </section>
+
+    <section id="pomoc" aria-labelledby="pytania">
+      <h2 id="pytania">Najczęstsze pytania</h2>
+      <details>
+        <summary>Czy potrzebuję internetu?</summary>
+        <p>Wbudowana baza pytań, nauka i egzaminy próbne działają offline. Internet jest potrzebny do pobrania aktualizacji pytań, obsługi zakupów i wysyłania zgłoszeń. Aktualizację bazy możesz sprawdzić w Ustawieniach.</p>
+      </details>
+      <details>
+        <summary>Jak przywrócić pełną wersję?</summary>
+        <p>W aplikacji wybierz <strong>Ustawienia → Przywróć zakup</strong>. Korzystaj z tego samego konta i sklepu, w którym dokonano zakupu. Przywrócenie zakupu nie przywraca lokalnego postępu z innego urządzenia.</p>
+      </details>
+      <details>
+        <summary>Jak zgłosić błąd w pytaniu?</summary>
+        <p>Pod wyjaśnieniem wybierz <strong>Zgłoś błąd w pytaniu</strong> i wskaż przyczynę. Możesz też napisać e-mail, podając identyfikator pytania, ścieżkę PZSS lub WPA i krótki opis problemu.</p>
+      </details>
+      <details>
+        <summary>Gdzie zapisuje się mój postęp?</summary>
+        <p>Postęp i historia są zapisane na urządzeniu. Aplikacja nie wymaga tworzenia konta i nie synchronizuje postępu między urządzeniami. Usunięcie aplikacji może oznaczać utratę lokalnych danych.</p>
+      </details>
+      <details>
+        <summary>Czy mogę wyłączyć statystyki użycia?</summary>
+        <p>Tak. Przełącznik znajdziesz w <strong>Ustawienia → Anonimowe statystyki użycia</strong>. Aplikacja korzysta z TelemetryDeck do analityki. Szczegóły opisuje <a href="privacy.html">polityka prywatności</a>.</p>
+      </details>
+      <details>
+        <summary>Gdzie znajdę pomoc dotyczącą zwrotu zakupu?</summary>
+        <p>Dla zakupu w App Store skorzystaj ze strony <a href="https://reportaproblem.apple.com/">Apple — zgłoś problem z zakupem</a>. Dla Google Play zobacz <a href="https://support.google.com/googleplay/answer/2479637?hl=pl">pomoc Google dotyczącą zwrotów</a>. W razie problemów z samą aplikacją napisz do nas.</p>
+      </details>
+    </section>
+
+    <section class="card contact" aria-labelledby="kontakt">
+      <div>
+        <h2 id="kontakt">Potrzebujesz pomocy?</h2>
+        <p class="muted">Pytania, problemy z aplikacją i propozycje ulepszeń:</p>
+        <a href="mailto:mb.software.studio@gmail.com">mb.software.studio@gmail.com</a>
+      </div>
+      <a class="button" href="support.html">Strona pomocy <span aria-hidden="true">&nbsp;↗</span></a>
+    </section>
+
+    <section aria-labelledby="niezaleznosc">
+      <h2 id="niezaleznosc">Informacje o materiałach</h2>
+      <p class="fine">Aplikacja jest niezależna i nie jest powiązana z Polskim Związkiem Strzelectwa Sportowego ani z Policją. Odpowiedzi do pytań PZSS oraz wyjaśnienia są autorskie. Materiały służą do nauki; aplikacja nie zastępuje szkolenia praktycznego. Datę stanu prawnego bazy znajdziesz w aplikacji. W razie wątpliwości sprawdź aktualny tekst przepisów i zasady organizatora egzaminu.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-links">
+        <a href="privacy.html">Polityka prywatności</a>
+        <a href="support.html">Pomoc techniczna</a>
+        <a href="mailto:mb.software.studio@gmail.com">Kontakt e-mail</a>
+      </div>
+      <p>Patent Strzelecki – Testy WPA · Michał Boryczko</p>
+    </div>
+  </footer>
+</body>
+</html>
